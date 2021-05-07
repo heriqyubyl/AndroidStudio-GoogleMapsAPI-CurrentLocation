@@ -35,7 +35,7 @@ class ItemAdapter(val context: Context, val items: ArrayList<EmpModel>) : Recycl
     // memasukkan data ke view holder
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items.get(position)
-        holder.no.text = position.toString()
+        holder.no.text = (position+1).toString()
         holder.tv_namakegiatan.text = item.nama_kegiatan
         holder.tv_waktukegiatan.text = item.waktu_kegiatan
         holder.tv_lokasikegiatan.text = item.lokasi_kegiatan
